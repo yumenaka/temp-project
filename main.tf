@@ -44,7 +44,7 @@ resource "docker_image" "app" {
   build {
     context    = "${path.module}/app"
     dockerfile = "Dockerfile"
-    platform   = var.image_platform # e.g. linux/amd64 或 linux/arm64
+    platform   = var.image_platform # e.g. linux/amd64  linux/arm64
     no_cache   = false
   }
 }

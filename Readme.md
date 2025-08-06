@@ -18,3 +18,6 @@ terraform apply -auto-approve
 
 terraform apply -replace=docker_image.app -auto-approve
 ```
+
+テスト環境は macOS ARM（linux/arm64）です。
+他のプラットフォームで実行する場合は、variables.tf 内の image_platform を変更する必要があるかもしれません（一般的には linux/amd64）。
