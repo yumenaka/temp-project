@@ -10,7 +10,8 @@
 # # コード更新後のイメージ再構築
 # terraform apply -replace=docker_image.app -auto-approve
 
-
+# # コンテナの停止と削除
+# terraform destroy -auto-approve
 terraform {
   required_providers {
     docker = {
